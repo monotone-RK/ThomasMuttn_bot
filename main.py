@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #********************************************************************************/
 # ThomasMuttn_bot by python                     Ver:1.0 Last updated 2012.12.31 */
-# Copyright (C) 2013 monotone-RK                                                */
+# Copyright (C) 2013 Ryohei Kobayashi                                           */
 # Licensed under MIT. See LICENCE file for more information.                    */
 #********************************************************************************/
 import sys
