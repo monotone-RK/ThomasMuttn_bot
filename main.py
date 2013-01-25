@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #********************************************************************************/
-# ThomasMuttn_bot by python     Ver:1.0 Last updated 2012.12.31       monotone-RK/
+# ThomasMuttn_bot by python                     Ver:1.0 Last updated 2012.12.31 */
+# Copyright (C) 2013 monotone-RK                                                */
+# Licensed under MIT. See LICENCE file for more information.                    */
 #********************************************************************************/
 import sys
 import os
