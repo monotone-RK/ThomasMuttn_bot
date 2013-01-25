@@ -1,0 +1,2 @@
+tweet:
+	./main.py tweet
