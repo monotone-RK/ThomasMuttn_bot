@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#********************************************************************************/
-# ThomasMuttn_bot by python                     Ver:1.0 Last updated 2012.12.31 */
-# Copyright (C) 2013 Ryohei Kobayashi                                           */
-# Licensed under MIT. See LICENCE file for more information.                    */
-#********************************************************************************/
+#******************************************************************************/
+# ThomasMuttn_bot by python                   Ver:1.0 Last updated 2012.12.31 */
+# Copyright (C) 2013 Ryohei Kobayashi                                         */
+# Licensed under MIT. See LICENCE file for more information.                  */
+#******************************************************************************/
 import sys
 import os
 import time
@@ -15,25 +15,31 @@ import twitter
 import urllib2
 from optparse import OptionParser
 
+optparser = OptionParser() 
+optparser.add_option("-v","--version",action="store_true",dest="showversion",
+                     default=False,help="Show the version")
+(options, args) = optparser.parse_args()
+
+#** consumer key,secret, oauth token,secret, tweetfile                       **/
+#******************************************************************************/  
 CONSUMER_KEY = "consumer_key"
 CONSUMER_SECRET = "consumer_secret"
 OAUTH_TOKEN = "oauth_token"
 OAUTH_TOKEN_SECRET = "oauth_token_secret"
 TWEET_FILE = "./dic/tweet.txt"
 
+#** functions                                                                **/
+#******************************************************************************/  
+def showVersion():
+    print "## 1.0   last upated:2012.12.31"
+
 def showUsage():
     print "## ThomasMuttn_bot by python"
     print "## Date:2012.12.31"
     print "## Usage: ./main.py tweet"
 
-def showVersion():
-    print "## 1.0   last upated:2012.12.31"
-
-optparser = OptionParser() 
-optparser.add_option("-v","--version",action="store_true",dest="showversion",
-                     default=False,help="Show the version")
-(options, args) = optparser.parse_args()
-
+#** process                                                                  **/
+#******************************************************************************/  
 if options.showversion:
     showVersion()
     sys.exit()
