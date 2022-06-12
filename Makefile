@@ -1,2 +1,2 @@
 tweet:
-	./main.py tweet
+	python3 main.py tweet
